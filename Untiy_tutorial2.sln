@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{F67C779F-7A63-966E-37DB-335C52278EAD}") = "Untiy_tutorial2", "Assembly-CSharp.csproj", "{045486CD-E01F-D9D2-16CF-32D0B09C2373}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{045486CD-E01F-D9D2-16CF-32D0B09C2373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045486CD-E01F-D9D2-16CF-32D0B09C2373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045486CD-E01F-D9D2-16CF-32D0B09C2373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045486CD-E01F-D9D2-16CF-32D0B09C2373}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
