@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447264}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,7 +23,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412842}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,9 @@ GameObject:
   - 50: {fileID: 5016524}
   - 114: {fileID: 11414744}
   - 114: {fileID: 11462700}
-  m_Layer: 0
+  - 61: {fileID: 6134838}
+  - 60: {fileID: 6017918}
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +60,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414634}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.063, y: 0.533, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 447264}
@@ -133,6 +135,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &6017918
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179158}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.002334118, y: 0.09630882}
+      - {x: -0.11137217, y: 0.12233415}
+      - {x: -0.12446925, y: -0.07237218}
+      - {x: -0.07493654, y: -0.1343848}
+      - {x: 0.0052050054, y: -0.13178228}
+      - {x: 0.07219237, y: -0.1343848}
+      - {x: 0.12698734, y: -0.07698731}
+      - {x: 0.12308842, y: 0.10672041}
+      - {x: 0.11657727, y: 0.09192408}
+      - {x: 0.096987486, y: 0.13055189}
+--- !u!61 &6134838
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179158}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.48, y: 0.48}
 --- !u!95 &9571998
 Animator:
   serializedVersion: 3
@@ -175,7 +215,8 @@ MonoBehaviour:
   speed: 0.5
   shotDelay: 0.3
   bullet: {fileID: 180578, guid: 92f09bc7c384fce4e8b0ae7caf66ad76, type: 2}
-  canShot: 0
+  canShot: 1
+  explosion: {fileID: 134478, guid: 2c34ca0192f87f347bbef5fb9c75cf63, type: 2}
 --- !u!212 &21246476
 SpriteRenderer:
   m_ObjectHideFlags: 1

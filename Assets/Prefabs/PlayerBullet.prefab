@@ -10,7 +10,8 @@ GameObject:
   - 4: {fileID: 468388}
   - 212: {fileID: 21281350}
   - 50: {fileID: 5047968}
-  m_Layer: 0
+  - 60: {fileID: 6011070}
+  m_Layer: 10
   m_Name: BulletRitght
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +28,8 @@ GameObject:
   - 4: {fileID: 453168}
   - 212: {fileID: 21266554}
   - 50: {fileID: 5026314}
-  m_Layer: 0
+  - 60: {fileID: 6027628}
+  m_Layer: 10
   m_Name: BulletLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +46,7 @@ GameObject:
   - 4: {fileID: 466822}
   - 50: {fileID: 5082106}
   - 114: {fileID: 11463674}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.80784184, y: -0.1945795, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 468388}
@@ -140,6 +142,56 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &6011070
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140154}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.0155072175, y: 0.0786546}
+      - {x: -0.026308235, y: 0.05197428}
+      - {x: -0.0294975, y: 0.030109093}
+      - {x: -0.018447813, y: -0.03323002}
+      - {x: -0.010469731, y: -0.07208952}
+      - {x: -0.008282598, y: -0.072102755}
+      - {x: -0.0055376254, y: -0.08789724}
+      - {x: 0.017738346, y: -0.060744107}
+      - {x: 0.030087952, y: 0.01454252}
+      - {x: 0.026308183, y: 0.052102737}
+      - {x: 0.010973457, y: 0.08054136}
+--- !u!60 &6027628
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157678}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.0155072175, y: 0.0786546}
+      - {x: -0.026308235, y: 0.05197428}
+      - {x: -0.0294975, y: 0.030109093}
+      - {x: -0.018447813, y: -0.03323002}
+      - {x: -0.010469731, y: -0.07208952}
+      - {x: -0.008282598, y: -0.072102755}
+      - {x: -0.0055376254, y: -0.08789724}
+      - {x: 0.017738346, y: -0.060744107}
+      - {x: 0.030087952, y: 0.01454252}
+      - {x: 0.026308183, y: 0.052102737}
+      - {x: 0.010973457, y: 0.08054136}
 --- !u!114 &11463674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  lifeTime: 5
 --- !u!212 &21266554
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -230,6 +283,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingLayerID
       value: -2054723039
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: lifeTime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
